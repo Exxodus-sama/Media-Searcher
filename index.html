@@ -5,23 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Media-pedia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">    
-    <script src="assets/mainMedia.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/mediaStyle.css" />
 </head>
+
 <body>
     <div class="jumbotron">
         <h1 class="display-4">Media-pedia</h1>
         <p class="lead">Welcome to the Media-pedia, your friendly media searcher app! </p>
         <hr class="my-4">
-        <p>Let's get started: Type in a movie or video game title in the search bar below to look up more information on them!</p>
+        <p>Let's get started: Type in a movie title in the search bar below to look up more information on it!</p>
     </div>
 
+<br> <br>
+
     <form>
-        <div class="form-group">
-            <label for="searchForMedia">Type media here</label>
-            <input type="search" class="form-control" id="search-bar" placeholder="e.g. Pokemon, Mario, Halo, etc...">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                            <label for="searchForMedia">Type media here</label>
+                            <input type="search" class="form-control" id="search-bar" placeholder="e.g. The Matrix, Finding Nemo, etc...">
+                    </div>
+                    <button id="submit-search" type="submit" class="btn btn-primary">Submit</button>
+                    <button id="clear-page" class="btn btn-danger">Clear</button>
+                </div>
+            </div>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
+
+    <br> <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm" id="movies-view">
+
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar sticky-bottom navbar-light justify-content-center">
+        <span class="nav-item nav-space">Copyright Othoniel Virgen 2018</span>
+    </nav>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/mainMedia.js"></script>
 </body>
 </html>
